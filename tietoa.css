@@ -71,7 +71,70 @@ header a {
     width: 100%;
     margin: 0%;
 }
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+}
 
+article, aside {
+    width: 50%;
+}
+
+article p {
+    width: 80%;
+    margin: auto;
+    font-size: 22px;
+}
+
+article {
+    background-color: var(--taustavari);
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-bottom: 5px;
+}
+
+figure {
+    margin: 0%;
+}
+
+.alalaatikko
+{
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: var(--taustavari);
+        margin-top: 15px;
+        width: 80%;;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 15px;
+    
+}
+
+.alempilaatikko
+{
+display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: var(--taustavari);
+        font-size: 22px;
+        width: 80%;
+        margin: auto;
+    }
 /*-------footer--------*/
 footer {
     background-color: rgb(14, 14, 14);
