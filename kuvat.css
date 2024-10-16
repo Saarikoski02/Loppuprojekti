@@ -140,12 +140,12 @@ footer p {
 }
 
 /*---------Tuote selain------*/
-/* PRODUCTS */
+
 .sisältö {
     position: relative;
     overflow: hidden;
     padding: 20px;
-
+    max-height: 500px;
   }
   .sisältö p, .sisältö h1, .sisältö h2
   {
@@ -164,7 +164,9 @@ footer p {
     padding: 0 10vw;
     display: flex;
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-behavior: smooth;
+    flex-wrap: nowrap;
   }
   
   .tuotesäiliö:-webkit-scrollbar {
@@ -176,6 +178,11 @@ footer p {
     width: 250px;
     height: 450px;
     margin-right: 40px;
+  }
+
+  .tuotekortti:last-child
+  {
+    margin-right: 0;
   }
   
   .tuotekuva {
