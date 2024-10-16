@@ -141,13 +141,13 @@ footer p {
 
 /*---------Tuote selain------*/
 /* PRODUCTS */
-.Tuote {
+.sisältö {
     position: relative;
     overflow: hidden;
     padding: 20px;
 
   }
-  .Tuote p, .Tuote h1, .Tuote h2
+  .sisältö p, .sisältö h1, .sisältö h2
   {
     color: #fff;
   }
@@ -167,7 +167,7 @@ footer p {
     scroll-behavior: smooth;
   }
   
-  .tuotesäiliö::-webkit-scrollbar {
+  .tuotesäiliö:-webkit-scrollbar {
     display: none;
   }
   
@@ -202,7 +202,7 @@ footer p {
     text-transform: capitalize;
   }
   
-  .product-card:hover {
+  .tuotekortti:hover {
     opacity: 1;
   }
 
@@ -253,6 +253,7 @@ footer p {
   .pre-btn img,
   .nxt-btn img {
     opacity: 0.2;
+    color: black;
   }
   
   .pre-btn:hover img,
