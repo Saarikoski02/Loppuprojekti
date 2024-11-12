@@ -1,19 +1,20 @@
-/* Google fontti */
+/* Google-fontti */
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Oswald:wght@200..700&display=swap');
 
+/* Värit ja muuttujat */
 :root {
     --taustavari: #ababab;
     --aksenttivari: crimson;
 }
 
-/*------Yleiset---------*/
+/* ---------- Yleiset tyylit ---------- */
 body {
     background-color: rgb(32, 32, 32);
     font-family: "Afacad Flux", sans-serif;
-    margin: 0%;
+    margin: 0;
 }
 
-/*-------Otsikot--------*/
+/* Otsikot */
 h1, h2, h3 {
     font-family: "Oswald", sans-serif;
 }
@@ -23,11 +24,11 @@ h1 {
     font-size: 50px;
 }
 
-/*-------headeri--------*/
+/* ---------- Header ---------- */
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* Logo ja yhteydenotto pysyvät paikoillaan */
+    justify-content: space-between;
     align-items: center;
     font-size: x-large;
     padding: 20px;
@@ -35,28 +36,26 @@ header {
 }
 
 .logo-container {
-    flex: 1; /* Tämä vie vasemman alueen */
+    flex: 1;
 }
 
 nav {
     display: flex;
-    justify-content: center; /* Keskittää linkit */
+    justify-content: center;
     align-items: center;
     background-color: var(--taustavari);
     padding: 5px 35px;
     border-radius: 15px;
-    /* flex-grow: 2; Varmistaa, että nav vie kaiken tilan */
 }
 
 .contact-container {
-    flex: 1; 
+    flex: 1;
 }
 
 header a {
     text-decoration: none;
     color: rgb(15, 15, 15);
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 10px;
 }
 
 .yhteydenotto {
@@ -66,14 +65,13 @@ header a {
     float: right;
 }
 
-/*-------Main--------*/
+/* ---------- Main ---------- */
 main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
-    align-content: stretch;
     width: 80%;
     margin: auto;
     margin-top: 100px;
@@ -83,24 +81,23 @@ article, aside {
     width: 50%;
 }
 
+article {
+    background-color: var(--taustavari);
+    padding: 0;
+    margin-bottom: 5px;
+}
+
 article p {
     width: 80%;
     margin: auto;
     font-size: 22px;
 }
 
-article {
-    background-color: var(--taustavari);
-    padding-top: 0%;
-    padding-bottom: 0%;
-    margin-bottom: 5px;
-}
-
 figure {
-    margin: 0%;
+    margin: 0;
 }
 
-/*-------footer--------*/
+/* ---------- Footer ---------- */
 footer {
     background-color: rgb(14, 14, 14);
     display: flex;
@@ -108,12 +105,15 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    align-content: stretch;
     margin-top: 100px;
 }
 
 footer p {
     color: azure;
+}
+
+.somet {
+    margin-top: 15px;
 }
 
 .somet a {
@@ -122,12 +122,7 @@ footer p {
     padding: 15px;
 }
 
-.somet
-{
-    margin-top: 15px;
-}
-
-/*-------kuvat-------*/
+/* ---------- Kuvat ---------- */
 .logo img {
     width: 64px;
     height: 64px;
@@ -136,69 +131,66 @@ footer p {
 
 .kuvasamista img {
     width: 100%;
-    margin: 0%;
+    margin: 0;
 }
 
-/*---------Tuote selain------*/
-
+/* ---------- Tuote-selain ---------- */
 .sisältö {
     position: relative;
     overflow: hidden;
     padding: 20px;
     max-height: 500px;
-  }
-  .sisältö p, .sisältö h1, .sisältö h2
-  {
+}
+
+.sisältö p, .sisältö h1, .sisältö h2 {
     color: #fff;
-  }
-  
-  .tuote-kategoria {
+}
+
+.tuote-kategoria {
     padding: 0 10vw;
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 40px;
     text-transform: capitalize;
-  }
-  
-  .tuotesäiliö {
+}
+
+.tuotesäiliö {
     padding: 0 10vw;
     display: flex;
     overflow-x: auto;
-    overflow-y: hidden;
     scroll-behavior: smooth;
     flex-wrap: nowrap;
-  }
-  
-  .tuotesäiliö:-webkit-scrollbar {
+}
+
+.tuotesäiliö::-webkit-scrollbar {
     display: none;
-  }
-  
-  .tuotekortti {
+}
+
+.tuotekortti {
     flex: 0 0 auto;
     width: 250px;
     height: 450px;
     margin-right: 40px;
-  }
+}
 
-  .tuotekortti:last-child
-  {
+.tuotekortti:last-child {
     margin-right: 0;
-  }
-  
-  .tuotekuva {
+}
+
+.tuotekuva {
     position: relative;
     width: 100%;
     height: 350px;
     overflow: hidden;
-  }
-  
-  .tuote-thumbnail {
+}
+
+.tuote-thumbnail {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  
-  .discount-tag {
+}
+
+.discount-tag {
     position: absolute;
     background: #fff;
     padding: 5px;
@@ -207,34 +199,33 @@ footer p {
     right: 10px;
     top: 10px;
     text-transform: capitalize;
-  }
-  
-  .tuotekortti:hover {
-    opacity: 1;
-  }
+}
 
-  .product-info {
+.tuotekortti:hover {
+    opacity: 1;
+}
+
+.product-info {
     width: 100%;
     height: 100px;
     padding-top: 10px;
-  }
-  
-  .price {
+}
+
+.price {
     font-weight: 900;
     font-size: 20px;
     color: #fff;
-  }
+}
 
-
-  
-  .actual-price {
+.actual-price {
+    color: var(--aksenttivari);
     margin-left: 20px;
-    opacity: 0.5;
     text-decoration: line-through;
-  }
-  
-  .pre-btn,
-  .nxt-btn {
+    font-size: 20px;
+}
+
+/* Selauspainikkeet */
+.pre-btn, .nxt-btn {
     border: none;
     width: 10vw;
     height: 100%;
@@ -246,46 +237,44 @@ footer p {
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
     cursor: pointer;
     z-index: 8;
-  }
-  
-  .pre-btn {
+}
+
+.pre-btn {
     left: 0;
     transform: rotate(180deg);
-  }
-  
-  .nxt-btn {
+}
+
+.nxt-btn {
     right: 0;
-  }
-  
-  .pre-btn img,
-  .nxt-btn img {
+}
+
+.pre-btn img, .nxt-btn img {
     opacity: 0.2;
-    color: black;
-  }
-  
-  .pre-btn:hover img,
-  .nxt-btn:hover img {
+}
+
+.pre-btn:hover img, .nxt-btn:hover img {
     opacity: 1;
-  }
-  
-  .collection-container {
+}
+
+/* Kokoelmat */
+.collection-container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
-  }
-  
-  .collection {
+}
+
+.collection {
     position: relative;
-  }
-  
-  .collection img {
+}
+
+.collection img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  
-  .collection p {
+}
+
+.collection p {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -294,9 +283,41 @@ footer p {
     color: #fff;
     font-size: 50px;
     text-transform: capitalize;
-  }
-  
-  .collection:nth-child(3) {
+}
+
+.collection:nth-child(3) {
     grid-column: span 2;
     margin-bottom: 10px;
-  }
+}
+
+/* ---------- Layout: Laatikko ja Kolumnit ---------- */
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    margin: auto;
+}
+
+.box .column {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.box .column img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 25px;
+}
+
+/* Responsiivinen layout */
+@media only screen and (max-width: 769px) {
+    .box {
+        flex-direction: column;
+    }
+    .box .column {
+        width: 100%;
+    }
+}
