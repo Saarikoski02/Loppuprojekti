@@ -32,19 +32,25 @@
         </aside>
         <article>
             <h1>Ota yhteyttä</h1>
-            <form class="yhteydenottolomake">
+            <form class="yhteydenottolomake" 
+            action="https://api.web3forms.com/submit" method="POST">
+            
+            <input type="hidden" name="access_key" value="aaa2065e-60cf-482d-9d95-40770b81d478">
+                
                 <label for="nimi">Nimi:</label><br>
-                <input type="text" id="nimi"><br>
+                <input type="text" id="nimi" name="nimi"><br>
 
                 <label for="sähköposti">Sähköposti:</label><br>
-                <input type="text" id="sähköposti"><br>
+                <input type="email" id="sähköposti" name="sähköposti" ><br>
 
                 <label for="puhelinnumero">Puhelinnumero:</label><br>
-                <input type="text" id="puhelinnumero"><br>
-
-                <label for="viesti">Viesti:</label><br>
-                <input type="text" id="viesti"><br>
-
+                <input type="text" id="puhelinnumero" name="puhelinnumero"><br>
+                
+                <label for="lisätiedot">Lisätiedot:</label><br>
+                <textarea class="lisätiedot" name="lisätiedot" rows="3"></textarea>
+                
+                
+                
                 <button class="nappi">Lähetä</button>
             </form>
         </article>
