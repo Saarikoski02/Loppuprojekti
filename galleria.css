@@ -152,6 +152,7 @@ footer p {
     font-weight: 500;
     margin-bottom: 40px;
     text-transform: capitalize;
+    color: #fff;
 }
 
 .tuotesäiliö {
@@ -293,7 +294,7 @@ footer p {
 /* ---------- Layout: Laatikko ja Kolumnit ---------- */
 .box {
     display: flex;
-    flex-direction: row;
+    flex-direction: wrap;
     justify-content: space-between;
     align-items: flex-start;
     width: 90%;
@@ -304,6 +305,7 @@ footer p {
     display: flex;
     flex-direction: column;
     width: 32.5%;
+    margin-bottom: 25px;
 }
 
 .box .column img {
