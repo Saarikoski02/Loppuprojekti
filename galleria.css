@@ -294,7 +294,6 @@ footer p {
 /* ---------- Layout: Laatikko ja Kolumnit ---------- */
 .box {
     display: flex;
-    flex-direction: wrap;
     justify-content: space-between;
     align-items: flex-start;
     width: 90%;
