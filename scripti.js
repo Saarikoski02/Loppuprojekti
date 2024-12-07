@@ -4,7 +4,7 @@ const preBtn = [...document.querySelectorAll('.pre-btn')];
 
 productContainers.forEach((container, i) => {
     let containerWidth = container.offsetWidth; // Kontainerin leveys
-    let scrollAmount = containerWidth * 0.9; // Vieritysmäärä yhtä kertaa kohden (90% leveydestä)
+    let scrollAmount = containerWidth * 0.25; // Vieritysmäärä yhtä kertaa kohden (90% leveydestä)
 
     nxtBtn[i].addEventListener('click', () => {
         container.scrollLeft += scrollAmount; // Vieritä oikealle

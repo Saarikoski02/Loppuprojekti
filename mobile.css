@@ -1,10 +1,66 @@
+/* Responsiiviset tyylit mobiililaitteille */
 @media only screen and (max-width: 600px) {
-    main {
-        flex-direction: column;
-        width: 100%;
+    header {
+        flex-direction: column; /* Siirrä kaikki elementit pystysuoraan */
+        text-align: center;
+        padding: 10px;
     }
-    article, aside
-{
-    width: 100%;
+
+    .logo-container, .contact-container {
+        flex: none; /* Poista suhteellinen leveyden jako */
+        margin-bottom: 10px;
+    }
+
+    nav {
+        flex-direction: column; /* Linkit pystysuoraan */
+        padding: 10px;
+    }
+
+    nav a {
+        margin: 5px 0; /* Lisää pystysuuntainen marginaali linkkien väliin */
+    }
+
+    main {
+        flex-direction: column; /* Aseta artikkeli ja aside allekkain */
+        width: 100%;
+        margin: 10px auto; /* Keskittää sisällön mobiilissa */
+    }
+
+    article, aside {
+        width: 100%; /* Vie koko leveys */
+        padding: 10px;
+    }
+
+    article p {
+        font-size: 18px; /* Pienennä tekstin kokoa paremmin mobiiliin sopivaksi */
+    }
+
+    footer {
+        flex-direction: column; /* Siirrä footer-elementit allekkain */
+        text-align: center;
+    }
+
+    .somet a {
+        font-size: 24px; /* Pienennä some-ikoneita */
+        padding: 10px;
+    }
 }
-  }
+
+/* Responsiiviset tyylit hieman leveämmille tableteille */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    nav a {
+        margin: 10px; /* Lisää hieman väliä tableteille */
+    }
+
+    main {
+        width: 90%; /* Tee sisältö hieman kapeammaksi tableteille */
+    }
+
+    article p {
+        font-size: 20px; /* Hieman suurempi fonttikoko tableteille */
+    }
+}
