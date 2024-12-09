@@ -23,6 +23,8 @@ h1 {
     font-size: 50px;
 }
 
+
+
 /*-------headeri--------*/
 header {
     display: flex;
@@ -87,6 +89,7 @@ article p {
     width: 80%;
     margin: auto;
     font-size: 22px;
+    margin-top: 30px;
 }
 
 article {
