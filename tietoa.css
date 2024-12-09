@@ -23,6 +23,11 @@ h1 {
     font-size: 50px;
 }
 
+h2 {
+    margin-top: 40px;
+    text-align: center;
+}
+
 /*-------headeri--------*/
 header {
     display: flex;
@@ -91,6 +96,7 @@ article p {
     width: 80%;
     margin: auto;
     font-size: 22px;
+    margin-bottom: 10px;
 }
 
 article {
@@ -98,6 +104,10 @@ article {
     padding-top: 0%;
     padding-bottom: 0%;
     margin-bottom: 5px;
+}
+
+.linkki {
+    margin-top: 50px;
 }
 
 figure {
@@ -108,11 +118,8 @@ figure {
 {
     
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
         background-color: var(--taustavari);
         margin-top: 15px;
         width: 80%;;
@@ -124,17 +131,19 @@ figure {
 
 .alempilaatikko
 {
-display: flex;
-        flex-direction: row;
+        display: flex;
+        flex-direction: column;
         flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
         background-color: var(--taustavari);
         font-size: 22px;
         width: 80%;
         margin: auto;
     }
+
+.alempilaatikko p
+{
+    padding-left: 10%;
+}
 /*-------footer--------*/
 footer {
     background-color: rgb(14, 14, 14);
