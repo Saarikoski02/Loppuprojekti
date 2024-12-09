@@ -34,6 +34,7 @@
         flex-direction: column; /* Aseta artikkeli ja aside allekkain */
         width: 100%;
         margin: 10px auto; /* Keskittää sisällön mobiilissa */
+        padding: 0%; /*poistaa mahdolliset ylimääräiset tyhjät*/
     }
 
     article, aside {
