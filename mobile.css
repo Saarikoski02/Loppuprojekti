@@ -2,30 +2,30 @@
 @media only screen and (max-width: 600px) {
     header {
         display: flex;
-        flex-direction: column; /* Siirrä kaikki elementit pystysuoraan */
+        flex-direction: column; /* Siirrä logo ja yhteydenottolinkki pystysuoraan */
         align-items: center; /* Keskitetään sisältö */
         text-align: center;
         padding: 10px;
     }
 
     .logo-container, .contact-container {
-        width: 100%; /* Vie koko leveys */
-        margin-bottom: 10px; /* Lisää pystysuuntaista tilaa */
-        text-align: center; /* Keskitetään sisältö */
+        width: 100%;
+        text-align: center; /* Keskitetään logo ja yhteydenottolinkki */
+        margin-bottom: 10px; /* Lisää tilaa näiden väliin */
     }
 
     nav {
-        display: flex;
-        flex-direction: column; /* Linkit pystysuoraan mobiilissa */
-        gap: 10px; /* Väli linkkien välillä */
-        width: 100%; /* Vie koko leveys */
+        display: flex; /* Asetetaan linkit riviin */
+        justify-content: center; /* Keskitetään linkit */
+        gap: 20px; /* Lisää tilaa linkkien väliin */
+        width: 100%;
         text-align: center;
     }
 
     nav a {
         text-decoration: none;
         color: #000; /* Oletusväri */
-        font-size: 18px; /* Riittävän iso mobiilissa */
+        font-size: 18px; /* Fonttikoko mobiililaitteille */
         padding: 5px 0;
     }
 
@@ -69,7 +69,7 @@
 
     .logo-container, .contact-container {
         width: auto;
-        margin-bottom: 10px; /* Lisää väli tablettilaitteille */
+        margin-bottom: 10px;
         text-align: center;
     }
 
