@@ -316,13 +316,5 @@ footer p {
     padding-bottom: 20px;
 }
 
-/* Responsiivinen layout */
-@media only screen and (max-width: 769px) {
-    .box {
-        flex-direction: column;
-        width: 100%;
-    }
-    .box .column {
-        width: 100%;
-    }
+
 }
