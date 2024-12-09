@@ -18,7 +18,7 @@
         display: flex; /* Asetetaan linkit riviin */
         justify-content: center; /* Keskitetään linkit */
         gap: 20px; /* Lisää tilaa linkkien väliin */
-        width: 100%;
+        width: 90%;
         text-align: center;
     }
 
