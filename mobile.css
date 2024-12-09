@@ -1,26 +1,36 @@
 /* Responsiiviset tyylit mobiililaitteille */
 @media only screen and (max-width: 600px) {
     header {
+        display: flex;
         flex-direction: column; /* Siirrä kaikki elementit pystysuoraan */
+        align-items: center; /* Keskitetään sisältö */
         text-align: center;
         padding: 10px;
     }
 
     .logo-container, .contact-container {
-        flex: none; /* Poista suhteellinen leveyden jako */
-        margin-bottom: 10px;
+        width: 100%; /* Vie koko leveys */
+        margin-bottom: 10px; /* Lisää pystysuuntaista tilaa */
+        text-align: center; /* Keskitetään sisältö */
     }
 
     nav {
-        flex-direction: column; /* Linkit pystysuoraan */
-        padding: 10px;
+        display: flex;
+        flex-direction: column; /* Linkit pystysuoraan mobiilissa */
+        gap: 10px; /* Väli linkkien välillä */
+        width: 100%; /* Vie koko leveys */
+        text-align: center;
     }
 
     nav a {
-        margin: 5px 0; /* Lisää pystysuuntainen marginaali linkkien väliin */
+        text-decoration: none;
+        color: #000; /* Oletusväri */
+        font-size: 18px; /* Riittävän iso mobiilissa */
+        padding: 5px 0;
     }
 
     main {
+        display: flex;
         flex-direction: column; /* Aseta artikkeli ja aside allekkain */
         width: 100%;
         margin: 10px auto; /* Keskittää sisällön mobiilissa */
@@ -36,8 +46,10 @@
     }
 
     footer {
+        display: flex;
         flex-direction: column; /* Siirrä footer-elementit allekkain */
         text-align: center;
+        gap: 10px; /* Väli footerin elementtien välillä */
     }
 
     .somet a {
@@ -49,15 +61,32 @@
 /* Responsiiviset tyylit hieman leveämmille tableteille */
 @media only screen and (max-width: 768px) {
     header {
+        display: flex;
+        flex-direction: column; /* Sama layout kuin mobiilissa */
+        align-items: center;
         padding: 15px;
     }
 
+    .logo-container, .contact-container {
+        width: auto;
+        margin-bottom: 10px; /* Lisää väli tablettilaitteille */
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row; /* Linkit riviin tableteilla */
+        justify-content: center;
+        gap: 20px; /* Lisää väliä linkkien välille */
+    }
+
     nav a {
-        margin: 10px; /* Lisää hieman väliä tableteille */
+        font-size: 20px; /* Suurempi fontti tableteille */
     }
 
     main {
         width: 90%; /* Tee sisältö hieman kapeammaksi tableteille */
+        margin: 0 auto; /* Keskitetään sisältö */
     }
 
     article p {
