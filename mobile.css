@@ -1,69 +1,69 @@
-/* Responsiiviset tyylit mobiililaitteille */
+/* Puhelimille */
 @media only screen and (max-width: 600px) {
     header {
         display: flex;
-        flex-direction: column; /* Siirrä logo ja yhteydenottolinkki pystysuoraan */
-        align-items: center; /* Keskitetään sisältö */
+        flex-direction: column; 
+        align-items: center; 
         text-align: center;
         padding: 10px;
     }
 
     .logo-container, .contact-container {
         width: 100%;
-        text-align: center; /* Keskitetään logo ja yhteydenottolinkki */
-        margin-bottom: 10px; /* Lisää tilaa näiden väliin */
+        text-align: center; 
+        margin-bottom: 10px; 
     }
 
     nav {
-        display: flex; /* Asetetaan linkit riviin */
-        justify-content: center; /* Keskitetään linkit */
-        gap: 20px; /* Lisää tilaa linkkien väliin */
+        display: flex; 
+        justify-content: center; 
+        gap: 20px; 
         width: 90%;
         text-align: center;
     }
 
     nav a {
         text-decoration: none;
-        color: #000; /* Oletusväri */
-        font-size: 18px; /* Fonttikoko mobiililaitteille */
+        color: #000; 
+        font-size: 18px; 
         padding: 5px 0;
     }
 
     main {
         display: flex;
-        flex-direction: column; /* Aseta artikkeli ja aside allekkain */
+        flex-direction: column; 
         width: 100%;
-        margin: 10px auto; /* Keskittää sisällön mobiilissa */
-        padding: 0%; /*poistaa mahdolliset ylimääräiset tyhjät*/
+        margin: 10px auto; 
+        padding: 0%; 
     }
 
     article, aside {
-        width: 100%; /* Vie koko leveys */
+        width: 100%; 
         padding: 10px;
     }
 
     article p {
-        font-size: 18px; /* Pienennä tekstin kokoa paremmin mobiiliin sopivaksi */
+        font-size: 18px; 
     }
 
     footer {
         display: flex;
-        flex-direction: column; /* Siirrä footer-elementit allekkain */
+        flex-direction: column;
         text-align: center;
-        gap: 10px; /* Väli footerin elementtien välillä */
+        gap: 10px; 
     }
 
     .somet a {
-        font-size: 24px; /* Pienennä some-ikoneita */
+        font-size: 24px; 
         padding: 10px;
     }
 }
 
-/* Responsiiviset tyylit hieman leveämmille tableteille */
+/*Tabletille*/
 @media only screen and (max-width: 768px) {
     header {
         display: flex;
-        flex-direction: column; /* Sama layout kuin mobiilissa */
+        flex-direction: column; 
         align-items: center;
         padding: 15px;
     }
@@ -76,21 +76,21 @@
 
     nav {
         display: flex;
-        flex-direction: row; /* Linkit riviin tableteilla */
+        flex-direction: row; 
         justify-content: center;
-        gap: 20px; /* Lisää väliä linkkien välille */
+        gap: 20px; 
     }
 
     nav a {
-        font-size: 20px; /* Suurempi fontti tableteille */
+        font-size: 20px; 
     }
 
     main {
-        width: 90%; /* Tee sisältö hieman kapeammaksi tableteille */
-        margin: 0 auto; /* Keskitetään sisältö */
+        width: 90%; 
+        margin: 0 auto; 
     }
 
     article p {
-        font-size: 20px; /* Hieman suurempi fonttikoko tableteille */
+        font-size: 20px; 
     }
 }
